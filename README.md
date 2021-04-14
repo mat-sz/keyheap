@@ -1,3 +1,3 @@
 # Keyheap
 
-A web app for efortless OpenPGP encryption and key storage.
+A web app for effortless OpenPGP encryption and key storage.
