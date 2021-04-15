@@ -1,9 +1,15 @@
 import { Store } from 'redux';
+
 import { ActionModel } from '../types/Models';
+import { Key } from 'openpgp';
 
-export interface StateType {}
+export interface StateType {
+  keys: Key[];
+}
 
-let initialState: StateType = {};
+let initialState: StateType = {
+  keys: [],
+};
 
 export type StoreType = Store<StateType, ActionModel>;
 
