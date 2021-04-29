@@ -1,10 +1,10 @@
 import { Store } from 'redux';
 
-import { ActionModel } from '../types/Models';
-import { Key } from 'openpgp';
+import { ActionModel, KeyModel } from '../types/Models';
 
 export interface StateType {
-  keys: Key[];
+  keys: KeyModel[];
+  selectedKeyId?: string;
 }
 
 let initialState: StateType = {
