@@ -20,9 +20,10 @@ export function applicationState(state = initialState, action: ActionModel) {
   const newState = { ...state };
 
   switch (action.type) {
-    case ActionType.STORE_LOCK:
+    case ActionType.KEY_SELECT:
+      newState.selectedKeyId = action.value as string;
       break;
-    case ActionType.STORE_UNLOCK:
+    case ActionType.KEY_REMOVE:
       break;
     default:
       return state;
